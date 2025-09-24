@@ -1,0 +1,53 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Slightly increase the container max-widths */
+.container {
+  max-width: 70%;   /* Default: 540px */
+}
+
+a {
+  all: unset;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+/* Reset Bootstrap text margins */
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ul, ol, li,
+figure, figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+#comicLinks {
+  background-image: url("./assets/img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.bg-gray {
+  background-color: #303131;
+}
+
+#signupButton {
+  background-color: #303131;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  box-shadow: none;
+  border-color: #0283f9;
+  border-style: solid;
+  border-width: 3px;
+}
+
+.follow-color {
+  color: #1368cc;
+}
