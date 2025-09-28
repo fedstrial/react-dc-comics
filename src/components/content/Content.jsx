@@ -1,4 +1,5 @@
 import Comics from "./comics"
+import Comic from "./Comic"
 
 const Content = () => (
     <div className="bg-dark">
@@ -9,13 +10,19 @@ const Content = () => (
                 gap: '1.5rem',
                 justifyItems: 'start'
             }}>
+
                 {Comics.map((comic, index) =>
-                    <a href="" key={index} className="d-flex flex-column">
-                        <img src={comic.thumb} height={300} width={200} className="object-fit-cover" />
-                        <h3 className="mt-3">{comic.series.toLocaleUpperCase()}</h3>
-                    </a>
+                    <Comic
+                        key = {index}
+                        thumb = {comic.thumb}
+                        alt = {comic.title}
+                        series = {comic.series}
+                    />
                 )}
+                
             </div>
+
+
 
             <div className="position-absolute top-0 start-0 translate-middle-y" style={{ marginLeft: '-20px' }}>
                 <h3 className="fw-bold px-4 py-3 " style={{ backgroundColor: "#0283f9" }}>CURRENT SERIES</h3>
